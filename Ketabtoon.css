@@ -1,0 +1,690 @@
+*{
+    box-sizing: border-box;
+}
+.cantainer{
+
+        background-color: #f0f0f0;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        border: 1px solid #f0f0f0;
+        margin: 0px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    @media screen and (max-width: 600px){
+        .cantainer{
+            width: 100%;
+        }
+    }
+    /*--- End of Main container ---*/
+
+    /*--- Start of header ---*/
+    header{
+        background-color: #E1F5FE;
+        width: 100%;
+        height: 10%;
+        margin: 0 0;
+    }
+     /*--- Start of logo Div---*/
+    .logoDiv{
+        width: 200px;
+        height: 60px;
+        border: 1px solid none;
+        margin-top: 5px;
+        margin-left: 30px;
+        float: left;
+        
+    }
+    .logoDiv img{
+        width: 60px;
+        height: 60px;
+    }
+    span{
+        display: inline-block;
+        font-weight: bold;
+        position: relative;
+        bottom: 23;
+        left: 25;
+    }
+    @media screen and (max-width: 600px){
+        .logoDiv{
+            width: 40%;
+            float: left;
+            margin-left: 5px;
+        }
+        .logoDiv img{
+            float: left;
+        }
+        span{
+            display: inline-block;
+            font-weight: bold;
+            position: relative;
+            top: 20;
+            left: -4;
+        }
+    }
+    /*--- Start of Language Division ---*/
+    #languageDiv{
+        width: 200px;
+        height: 30px;
+        border: 1px solid none;
+        display: inline-block;
+        float: left;
+        position: relative;
+        top: 25;
+    }
+    
+    @media screen and (max-width: 600px){
+        #languageDiv{
+            width: 40%;
+            border: 1px solid none;
+            margin-top: none;
+        }
+    }
+   
+    #languageDiv a{
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        color: #1b4b72;
+    }
+    /*--- End of Language Division ---*/
+
+    /*--- Start of navigation in header ---*/
+    .navDiv{
+        width: 60%;
+        height: 60px;
+        border: none;
+        float: right;
+        border: 1px solid none;
+    }
+    nav{
+        width: 100%;
+        height: 60px;
+        background-color: #2196F3;
+        border-bottom: 2px solid none;
+    
+        border-bottom-left-radius: none;
+        /* border: linear-gradient(to bottom, 120deg teal); */
+          clip-path: polygon(0 0,100% 0,100% 100%, 6% 100%); 
+    }
+    @media screen and (max-width: 600px){
+        .navDiv{
+            display: none;
+            position: absolute;
+            z-index: 1000;
+            height: 400px;
+            width: 100%;
+            max-width: 400px;
+            background: none;
+            text-align: center;
+        }
+        .navDiv nav{
+            position: absolute;
+            height: 400px;
+            width: 100%;
+            max-width: 400px;
+            background: #2196F3;
+            display: block;
+        }
+    }
+    
+    .navDiv::before{ 
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-bottom: 50px solid none;
+        border-left: 60px solid  none;
+        width: 0; 
+    }
+    ul{
+        background-color: none;
+        border: none;
+        float: left;
+        position: relative; 
+        bottom: 6px;
+       
+    }
+    ul li{
+        list-style-type: none;
+        display: inline;
+        background-color: none;
+        border-right: 1px solid none;
+        border-radius: 2px;
+        margin: 0 10px;
+        position: relative;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+    ul li a{
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 5px 0px;
+        font-size: 18px;
+        text-transform: capitalize;
+        transition: all 0.3s ease;
+    }
+    ul li a:hover{
+        color: cyan;
+    }
+    .icon{
+        color: #FFFFFF;
+        font-size: 30px;
+        cursor: pointer;
+        display: none;
+    }
+    .icon.cancel-btn{
+        position: absolute;
+        right: 0px;
+        top: 8px;
+        margin-right: 10px;
+    }
+    .icon.menu-btn{
+        position: absolute;
+        right: 0px;
+        top: 8px;
+        margin-right: 10px;
+
+    }
+
+    @media screen and (max-width: 600px){
+        .icon{
+            display: block;
+        }
+        ul{
+            width: 94%;
+            margin-top: 30px;
+        }
+        ul li{
+            width: 94%;
+            display: block;
+            padding: 10px 0px;
+            margin-top: 10px;
+            border-bottom: 1px solid white;
+        }
+        ul li a{
+            text-align: center;
+
+        }
+    }
+
+    nav ul li a:before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        background-color: gold;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transfrom .4s linear;
+    }
+    nav ul li a:hover:before{
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+   
+    /*--- End of Navigation in header ---*/
+    /*--- End of header  ---*/
+
+    /*--- Start of h1 pragraph and input division ---*/
+    .hlpDiv{
+        border: 1px solid none;
+        width: 50%;
+        height: 25%;
+        display: inline-block;
+        padding: 0px 15px;
+        margin: 48px -15px;
+    }
+    @media screen and (max-width: 600px){
+        .hlpDiv{
+            width: 100%;
+        }
+    }
+    .hlpDiv h1{
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .hlpDiv p{
+        text-align: center;
+        font-size: 20px;
+        color: #1b4b72;
+    }
+    #inputtex{
+        width: 80%;
+        padding: 15px;
+        padding-left: 40px;
+        margin-bottom: none;
+        margin-top: none;
+        border-radius: 6px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        background-image: url('Imgs/search.png');
+        background-repeat: no-repeat;
+        background-position: 5px 10px;
+        backface-visibility: hidden;
+    }
+    /* .fa-search{
+        background-color: gray;
+        color: orange;
+        width: 10px;
+        position: relative;
+        top: 4;
+    } */
+    #inputbut{
+        width: 16%;
+        padding: 15px;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        margin-left: -3px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        background-color: #25D366;
+    }
+    @media screen and (max-width: 600px){
+        #inputtex{
+            width: 100%;
+            margin-bottom: 8px;
+            border-radius: 5px;
+        }
+        #inputbut{
+            width: 100%;
+            border-radius: 5px;
+            background-color: teal;
+        }
+    }
+    /*--- End of of h1 paragraph and  input div---*/
+
+    /*--- start of main body div ---*/
+    .main-body{
+        width: 90%;
+        /*margin: 0 80px;*/
+        min-height: 80%;
+        padding: 10px;
+        overflow: auto;
+        background-color: white;
+        border-radius: 15px;
+        position: relative;
+        left: 5%;
+        margin-top: 30px;
+    }
+    .main-body h2{
+        font-size:  16px;
+        text-align: left;
+        padding-top: 10px;
+        padding: 5px 25px;
+        margin: 0px 0px 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #495057;
+    }
+    @media screen and (max-width: 600px){
+        .main-body{
+            width: 90%;
+        }
+    }
+    /*--- start of box divisions ---*/
+    .box{
+        box-sizing: border-box;
+        width: 25%;
+        height: 25%;
+        border: 1px solid none;
+        float: left;
+        padding: 0px 20px;
+        margin-top: 30px;
+        position: relative;
+        left: none;
+        text-align: left;
+    }
+    @media screen and (max-width: 600px){
+        .box{
+            width: 50%;
+        }
+    }
+    /*--- start of subbox divivsion ---*/
+    .subox{
+        width: 328px;
+        width: 100%;
+        height: 65%;
+        display: inline-block;
+        border: 1px solid none;
+        position: relative;
+        top: none;
+        /*background-image:url('Imgs/meals.jfif');*/
+    }
+    .subox img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+    @media screen and (max-width: 600px){
+        .subox{
+            width: 100%;
+        }
+        .subox img{
+            width: 100%;
+        }
+        .subox h5{
+            font-size: 10px;
+        }
+        .subox p{
+            margin: 0px;
+        }
+    }
+    .h5pDiv{
+        width: 100%;
+        height: 35%;
+        border: 1px solid none;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .h5pDiv h5{
+        display: block;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        font-size: 18px;
+        color: #1b4b72;
+        text-align: center;
+        margin: 0px 0px;
+        position: relative;
+        bottom: none;
+    }
+    .h5pDiv p{
+        border: 1px solid none;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 0px;
+        display: inline-block;
+        text-align: center;
+        color: #1b4b72;
+    }
+    /* after this line this code for how to show div in different devices */
+    *{
+        box-sizing: border-box;
+    }
+    @media screen and (max-width: 600px){
+        .box{
+            width: 50%;
+        }
+    }
+    /* start of Most downloaded main body css*/
+    .box2{
+        box-sizing: border-box;
+        width: 16%;
+        height: 288px;
+        border: 1px solid none;
+        float: left;
+        padding: 8px 15px 0px;
+        margin: 0px 0px 24px;
+        margin-top: none;
+        position: relative;
+        left: 2%;
+        text-align: left;
+    }
+    @media screen and (max-width: 600px){
+        .box2{
+            width: 50%;
+            
+        }
+    }
+    .box2 a{
+        text-decoration: none;
+    }
+    .subox2{
+        width: 80%;
+        height: 200px;
+        border-radius: 5px;
+        border: 1px solid none;
+    }
+    @media screen and (max-width: 600px){
+            .subox2{
+                width: 90%;
+                height: 180px
+            
+            }
+    }
+    .subox2 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+    .hpDiv{
+        width: 100%;
+        border: 1px solid none;
+        margin-top: 10px;
+    }
+    .hpDiv h3{
+        margin: 2px 0px 2px;
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333333;
+        text-align: center;
+    }
+    .hpDiv h3:hover{
+        color: #7C4DFF;
+        text-decoration: underline;
+    }
+    .hpDiv h6{
+        margin: 0px 0px 8px;
+        font-size: 14px;
+        text-align: center;
+        color: #38c138;
+    }
+     /*--- start of New books div ---*/
+    .box3{
+        box-sizing: border-box;
+        width: 16%;
+        height: 288px;
+        border: 1px solid none;
+        float: left;
+        padding: 8px 15px 0px;
+        margin: 0px 0px 24px;
+        margin-top: none;
+        position: relative;
+        left: 2%;
+        text-align: left;
+    } 
+    @media screen and (max-width: 600px){
+        .box3{
+            width: 50%;
+
+        }
+    }
+    .box3 a{
+        text-decoration: none;
+    }
+    #viewbookDiv{
+        width: 90%;
+        border: 1px solid none;
+        position: relative;
+        left: 1%;
+        top: 50;
+    }
+
+    #viewbookDiv input[type=submit]{
+        width: 20%;
+        height: 36;
+        font-size: 15px;
+        background-color: white;
+        color: #3490dc;
+        padding: 6px 12px;
+        margin: 0px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;  
+    }
+    /*--- start of footer div ---*/
+    footer{
+        width: 100%;
+        height: 540px;
+        background-color: #21252A;
+        color: white;
+        position: absolute;
+        padding-left: none;
+    }
+    @media screen and (max-width: 600px){
+        footer{
+            height: auto;
+          
+        }
+    }
+    section{
+        width: 90%;
+        height: 369px;
+        background-color: #21252A;
+        padding: 24px 0px;
+        border: 1px solid none;
+        position: relative;
+        left: 5%;
+    }
+    footer a{
+        text-decoration: none;
+        text-align: left;
+        display: block;
+        margin-left: none;
+        padding: 4.8px 0px;
+        font-size: 16px;
+        color: #FFFFFF;
+        font-family: sans-serif;
+    }
+    .AboutDiv{
+        width: 377px;
+        width: 50%;
+        height: auto;
+        background-color: none;
+        border: 1px solid none;
+        float: left;
+    }
+    @media screen and (max-width: 600px){
+        .AboutDiv{
+            width: 100%;
+            font: right;
+
+        }
+    }
+    .AboutDiv p{
+        color: #F8F9FA;
+        font-size: 16px;
+        padding: 0px 0px 16px;
+        text-align: left;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+    .uqlfDiv{
+        width: 15%;
+        height: auto;
+        background-color: none;
+        float: left;
+        border: 1px solid none;
+    }
+    @media screen and (max-width: 600px){
+        .uqlfDiv{
+            width: 50%;
+
+        }
+    }
+    /*.QLinkDiv{
+        width: 15%;
+        height: auto;
+        background-color: none;
+        float: left;
+        border: 1px solid red;
+    }
+    .FollowDiv{
+        width: 15%;
+        height: auto;
+        background-color: none;
+        float: left;
+        border: 1px solid red;
+    }*/
+    footer h5{
+        text-align: left;
+        margin-left: none;
+        padding: 8px 0px;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        text-decoration: underline;
+        text-underline-position: under;
+        font-size: 18px;
+    }
+    .FIconDiv{
+        width: 90%;
+        height: 150px;
+        border: 1px solid none;
+        position: relative;
+        left: 5%;
+        
+    }
+    .subiconDiv{
+        width: 100%;
+        height: 50px;
+        border: 1px solid none;
+        position: relative;
+        display: block;
+        top: 50px;
+    }
+    .fwtiDiv{
+        display: inline;
+        border: 10px solid none;
+        padding: 5px 2px;
+        border-radius: 5px;
+    }
+    .fa-facebook{
+        width: 45px; 
+        height: 45px;
+        padding: 15px 0px 0px 18px;
+        background-color: #3B5998;
+        border-radius: 25px;
+    }
+    .fa-twitter{
+        width: 45px; 
+        height: 45px;
+        padding: 15px 0px 0px 17px;
+        background-color: #55ACEE;
+        border-radius: 25px;
+    }
+    .fa-instagram{
+        width: 45px; 
+        height: 45px;
+        padding: 15px 0px 0px 17px;
+        background-color: #125688;
+        border-radius: 25px;
+    }
+    .fa-youtube{
+        width: 45px; 
+        height: 45px;
+        padding: 15px 0px 0px 17px;
+        background-color: #bb0000;
+        border-radius: 25px;
+    }
+    #copyDiv{
+        color: #6c757d;
+        font-size: 16px;
+        margin-bottom: 10px;
+        font-family: sans-serif;
+        position: relative;
+        left: -5px;
+    }
+    @media screen and (max-width: 600px){
+        .FIconDiv{
+            float: left;
+        }
+        #copyDiv{
+            float: left;
+            position: relative;
+            left: 80px;
+            top: -20px;
+        }
+    }

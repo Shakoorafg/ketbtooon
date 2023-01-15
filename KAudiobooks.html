@@ -1,0 +1,408 @@
+<html>
+	<head>
+        <title>Audio Books</title>
+        <link rel="stylesheet" href="ketabtoon.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    </head>
+    <style>
+        .main-body{
+                width: 90%;
+                /*margin: 0 80px;*/
+                min-height: 80%;
+                padding: 10px;
+                overflow: auto;
+                background-color: white;
+                border-radius: 0px;
+                position: relative;
+                left: 5%;
+                margin-top: 30px;
+                margin-bottom: 30px;
+        }
+        .audiobox{
+                box-sizing: border-box;
+                width: 24%;
+                height: 25%;
+                height: 420px;
+                background-color: black;
+                border: 1px solid black;
+                float: left;
+                padding: 0px 0px;
+                margin-top: 0px;
+                margin-left: 10px;
+                margin-bottom: 40px;
+                position: relative;
+                left: none;
+                text-align: left;
+                border-radius: 5px;
+        }
+        .audiobox img{
+                width: 100%;
+                height: 62%;
+
+        }
+        @media screen and (max-width: 600px){
+                .audiobox{
+                        width: 100%;
+                        position: relative;
+                        left: -3%;
+                        margin-bottom: 20px;
+                }
+                .main-body h2{
+                        margin-left: -18px;
+                
+                }
+        }
+        .logoPDiv{
+                width: 83%;
+                height: 15%;
+                height: 50px;
+                border: 1px solid  none;
+                display: inline-block;
+                float: left;
+        }
+        .logoPDiv p{
+                text-align: center;
+                color: wheat;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: bold;
+                font-family:  sans-serif;
+                
+        }
+        .logDiv{ 
+                width: 22%;
+                height: 13%;
+                height: 50px;
+                border: 1px solid  none;
+                display: inline-block;
+                float: left;
+        }
+        .logDiv img{
+                width: 100%;
+                height: 100%;
+                border: 1px solid none;
+                border-radius: 5px;
+                display: block;
+        }
+        .btnDiv{
+                width: 50px;
+                width: 16%;
+                height: 15%;
+                height: 48px;
+                border: 1px solid  none;
+                background-color: black;
+                display: inline-block;
+                float: right;
+        }
+        .btnDiv button{
+                width: 100%;
+                height: 100%;
+                font-size: 16px;
+                background-color: black;
+        }
+        audio{
+                width: 85%;
+                height: 20%;
+                margin-left: 15px;
+                margin-top: 0px;
+                margin-bottom: 15px;
+        }
+         </style>
+	<body>
+        <div class="cantainer">
+       <!--Start of Header Eelement-->
+        <header>
+               
+                <div class="logoDiv">
+                        <a href="KetabtonIndex.html"> <img src="C:\Users\abdul\OneDrive\Desktop\MyProject\Imgs\book.PNG"></a>
+                        <a href="KetabtonIndex.html" ><span>Ketabton</span></a>
+                </div>
+                <div id="languageDiv">
+                        <a href="#">English &nbsp|</a>
+                        <a href="#">دری &nbsp|</a>             
+                        <a href="#">پشتو </a>              
+                </div>
+                <div class="navDiv">
+                        <nav>
+                                <ul>
+                                         <li class="active"><a href="KetabtonIndex.html"> <i class="fa fa-" style="color: white; font-size: 20px;"></i>&nbsp Home</a></li>
+                                         <li><a href="KBooks.html">Books</a></li>
+                                         <li><a href="KAudiobooks.html">Audio Books</a></li>
+                                         <li><a href="KDonation.html">Donate</a></li>
+                                         <li><a href="RegistrationForm.html">Registration</a></li>
+                                         <li><a href="KLogin.html">Login</a></li>
+                                        
+                                        
+                                </ul>
+                        </nav>
+                        <div id="cornercutDiv"></div>
+                </div> 
+        </header>
+        <!--End of header elements-->
+        
+         <!--Start of Audio Books main body -->
+
+        <div class="main-body">
+                <h2>Audio Books</h2>
+                        <div class="audiobox">
+                                <div class="logoPDiv">
+                                        <div class="logDiv">
+                                                <img src="Imgs/book.png">
+                                        </div>
+                                        <p>کتاب: دهوا سترکوکی شکی</p>
+                                </div>
+                                <div class="btnDiv">
+                                        <button><a href="#"><i class="fa fa-ellipsis-v" style="color: white; height: 10px;"></i></a></button>
+                                </div>  
+                                <audio controls>
+                                        <source src="horse.mp3" type="audio/mpeg"></source>       
+                                </audio>
+                                <img src="Imgs/shanawaz.PNG">
+                        </div>
+
+                        <div class="audiobox">
+                                <div class="logoPDiv">
+                                        <div class="logDiv">
+                                                <img src="Imgs/book.png">
+                                        </div>
+                                                <p>کتاب: دناوی لور</p>
+                                </div>
+                                <div class="btnDiv">
+                                        <button><a href="#"><i class="fa fa-ellipsis-v" style="color: white; height: 10px;"></i></a></button>
+                                </div>  
+                                <audio controls>
+                                        <source src="horse.mp3" type="audio/mpeg"></source>       
+                                </audio>
+                                <img src="Imgs/naweloor.PNG">
+                        </div>
+
+                        <div class="audiobox">
+                                <div class="logoPDiv">
+                                        <div class="logDiv">
+                                                <img src="Imgs/book.PNG">
+                                        </div>
+                                        <p> کتاب: سلګی</p>
+                                </div>
+                                <div class="btnDiv">
+                                        <button><a href="#"><i class="fa fa-ellipsis-v" style="color: white; height: 10px;"></i></a></button>
+                                </div>  
+                                <audio controls>
+                                        <source src="horse.mp3" type="audio/mpeg"></source>       
+                                </audio>
+                                <img src="Imgs/salgy.PNG">
+                        </div>
+
+                        <div class="audiobox">
+                                <div class="logoPDiv">
+                                        <div class="logDiv">
+                                                <img src="Imgs/book.png">
+                                        </div>
+                                        <p>کتاب: دماشومانوژوند</p>
+                                </div>
+                                <div class="btnDiv">
+                                        <button><a href="#"><i class="fa fa-ellipsis-v" style="color: white; height: 10px;"></i></a></button>
+                                </div>  
+                                <audio controls>
+                                        <source src="horse.mp3" type="audio/mpeg"></source>       
+                                </audio>
+                                <img src="Imgs/children.jfif">
+                        </div>
+
+                        <div class="audiobox">
+                                <div class="logoPDiv">
+                                        <div class="logDiv">
+                                                <img src="Imgs/book.png">
+                                        </div>
+                                        <p> کتاب: اجتماعی علوم</p>
+                                </div>
+                                <div class="btnDiv">
+                                      
+                                        <button><a href="#"><i class="fa fa-ellipsis-v" style="color: white; height: 10px;"></i></a></button>
+                                </div>  
+                                <audio controls>
+                                        <source src="horse.mp3" type="audio/mpeg"></source>       
+                                </audio>
+                                <img src="Imgs/ecnomic.jfif">
+                        </div>
+
+                        <div class="audiobox">
+                                <div class="logoPDiv">
+                                        <div class="logDiv">
+                                                <img src="Imgs/book.png">
+                                        </div>
+                                                <p> کتاب: داسلام لارښود</p>
+                                </div>
+                                <div class="btnDiv">
+                                        <button><a href="#"><i class="fa fa-ellipsis-v" style="color: white; height: 10px;"></i></a></button>
+                                </div>  
+                                <audio controls>
+                                        <source src="horse.mp3" type="audio/mpeg"></source>       
+                                </audio>
+                                <img src="Imgs/art-and-litr.jfif">
+                        </div>
+
+                        <div class="audiobox">
+                                <div class="logoPDiv">
+                                        <div class="logDiv">
+                                                <img src="Imgs/book.png">
+                                        </div>
+                                        <p> کتاب: پښتو شعرونه</p>
+                                </div>
+                                <div class="btnDiv">
+                                        <button><a href="#"><i class="fa fa-ellipsis-v" style="color: white; height: 10px;"></i></a></button>
+                                </div>  
+                                <audio controls>
+                                        <source src="horse.mp3" type="audio/mpeg"></source>       
+                                </audio>
+                                <img src="Imgs/poetry.jfif">
+                        </div>
+                        <div class="audiobox">
+                                <div class="logoPDiv">
+                                        <div class="logDiv">
+                                                <img src="Imgs/book.png">
+                                        </div>
+                                        <p> کتاب: روعتیا پوهنه</p>
+                                </div>
+                                <div class="btnDiv">
+                                        <button><a href="#"><i class="fa fa-ellipsis-v" style="color: white; height: 10px;"></i></a></button>
+                                </div>  
+                                <audio controls>
+                                        <source src="horse.mp3" type="audio/mpeg"></source>       
+                                </audio>
+                                <img src="Imgs/medical.jfif">
+                        </div>                                                                                                
+                       
+         </div>
+
+         <!--Start of second Audio Books main body div-->
+
+        <div class="main-body">
+            <h2>Audio Books</h2>
+                <div class="audiobox">
+                        <div class="logoPDiv">
+                                <div class="logDiv">
+                                        <img src="Imgs/book.png">
+                                </div>
+                                        <p> کتاب: روعتیا پوهنه</p>
+                        </div>
+                <div class="btnDiv">
+                        <button><a href="#"><i class="fa fa-ellipsis-v" style="color: white; height: 10px;"></i></a></button>
+                </div>  
+                <audio controls>
+                        <source src="horse.mp3" type="audio/mpeg"></source>       
+                </audio>
+                        <img src="Imgs/medical.jfif">
+                </div>
+
+                <div class="audiobox">
+                                <div class="logoPDiv">
+                                        <div class="logDiv">
+                                                <img src="Imgs/book.png">
+                                        </div>
+                                        <p> کتاب: پښتو شعرونه</p>
+                                </div>
+                                <div class="btnDiv">
+                                        <button><a href="#"><i class="fa fa-ellipsis-v" style="color: white; height: 10px;"></i></button>
+                                </div>  
+                                        <audio controls>
+                                                <source src="horse.mp3" type="audio/mpeg"></source>       
+                                        </audio>
+                                <img src="Imgs/poetry.jfif">
+                </div>
+
+                <div class="audiobox">
+                        <div class="logoPDiv">
+                                <div class="logDiv">
+                                        <img src="Imgs/book.png">
+                                </div>
+                                <p> کتاب: روعتیا پوهنه</p>
+                        </div>
+                        <div class="btnDiv">
+                                <button><a href="#"><i class="fa fa-ellipsis-v" style="color: white; height: 10px;"></i></button>
+                        </div>  
+                                <audio controls>
+                                        <source src="horse.mp3" type="audio/mpeg"></source>       
+                                </audio>
+                        <img src="Imgs/psychology.jfif">
+                </div>
+                <div class="audiobox">
+                        <div class="logoPDiv">
+                                <div class="logDiv">
+                                        <img src="Imgs/book.png">
+                                </div>
+                                <p> کتاب: روعتیا پوهنه</p>
+                        </div>
+                        <div class="btnDiv">
+                                <button><a href="#"><i class="fa fa-ellipsis-v" style="color: white; height: 10px;"></i></button>
+                        </div>  
+                                <audio controls>
+                                        <source src="horse.mp3" type="audio/mpeg"></source>       
+                                </audio>
+                        <img src="Imgs/school.jfif">
+                </div>
+
+        </div>
+
+         <!--Start of New books main body div-->
+        
+         
+         <!--Start of footer element-->
+         <footer>
+                <section>
+                <div class="AboutDiv">
+                        <h5>About US</h5>
+                        <p>
+                                Ketabton is a digital library free and premium ebooks. it provides<br>
+                                a database of books, magazine and other digital documnets.<br>
+                                Ketabton gives you access to thousands of books.
+                        </p>
+                        <p>
+                                It enable you to search the datebase, view several categories, read online,<br>
+                                have the books printed or download to your device.
+                        </p>
+                </div>
+                <div class="uqlfDiv">
+                       
+                        <h5>User Account</h5> 
+                        <a href="#">Dashbord</a>
+                        <a href="#">Manger Your Books</a>
+                        <a href="#">Manage Your Post</a>
+                        <a href="#">Login</a>
+                        <a href="#">Register</a>
+                </div>
+                <div class="uqlfDiv">
+                        <h5>Quick Link</h5>
+                        <a href="#">Home</a>
+                        <a href="#">Books</a>
+                        <a href="#">Post</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Contact Us</a>
+                </div>
+                <div class="uqlfDiv">
+                        <h5>Follow Us</h5>
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Youtub</a>
+                        <a href="#">Instagram</a>
+                </div>
+               
+               </section>
+               <div class="FIconDiv"> 
+                        <div class="subiconDiv">
+                                <a href="www.facebook.com" class="fwtiDiv"><i class="fa fa-facebook"></i> </a> 
+                                <a href="www.twitter.com" class="fwtiDiv"> <i class="fa fa-twitter"></i></a>
+                                <a href="www.instagram.com" class="fwtiDiv"> <i class="fa fa-instagram"></i> </a>
+                                <a href="www.youtube.com" class="fwtiDiv"> <i class="fa fa-youtube"></i></a>
+                        </div>
+                </div>
+                <span id="copyDiv">Copy 2021 ketabton.com</span>
+        </div> 
+               
+        </footer>
+
+         <!-- End of footer elements -->
+        </div>
+	</body>
+</html>
