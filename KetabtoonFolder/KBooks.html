@@ -1,0 +1,410 @@
+<html>
+	<head>
+        <title>Books</title>
+        <link rel="stylesheet" href="ketabtoon.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+        </head>
+        <style>
+        .BookFilterDiv{
+                width: 90%;
+                min-height: 40%;
+                padding: 10px;
+                overflow: auto;
+                background-color: white;
+                border-radius: 15px;
+                position: relative;
+                left: 5%;
+                margin: 30px 0px;
+                background-color: white rgb(242, 243, 234);
+                box-shadow: 10px 10px 15px rgb(192, 183, 183), -10px -10px 15px whitesmoke;
+        }
+        .BookFilterDiv h2{
+                font-size:  16px;
+                text-align: left;
+                padding-top: 10px;
+                padding: 0px 16px;
+                margin: 0px 0px 16px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: #495057;
+        }
+        form{
+                width: 100%;
+                border: 1px solid none;
+                padding: 10px;
+        }
+        form select{
+                width: 100%;
+                padding: 10px 12px;
+                margin: 0px 0px 16px;
+                outline: none;
+                border: none;
+                border: 1px solid #ced4da;
+                border-radius: 5px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+                color: black;
+        }
+        form select option{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 14px;
+                font-weight: bold;
+                color: #495057;
+        }
+        form input[type=submit]{
+                width: 90px;
+                height: 40px;
+                margin-top: 15px;
+                display: block;
+                background-color: #3490DC;
+                border-radius: 4px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 10px 12px;
+                font-size: 16px;
+                font-weight: bolde;
+                color: #ffff;
+                font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
+        #Uploadbtn{
+                width: 130px;
+                height: 35px;
+                background-color: #3490DC;
+                border-radius: 4px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 4px 8px;
+                font-size: 12px;
+                font-weight: bolde;
+                color: #ffff;
+                font-family: 'Segoe UI', Tahoma, sans-serif;
+                margin-top: -45px;
+                margin-left: 80px;
+         }
+        .FIconDiv{
+                width: 90%;
+                height: 150px;
+                border: 1px solid none;
+                position: relative;
+                left: 5%;
+        
+        }
+        .subiconDiv{
+                width: 30%;
+                height: 50px;
+                text-align: center;
+                border: 1px solid none;
+                position: relative;
+                top: 50px;
+                left: 35%;
+                display: block;
+        }
+        .fwtiDiv{
+                display: inline;
+                border: 10px solid none;
+                padding: 5px 2px;
+                border-radius: 5px;
+        }
+        #copyDiv{
+                width: 30%;
+                text-align: center;
+                color: #6c757d;
+                border: 1px solid none;
+                font-size: 16px;
+                margin-bottom: 10px;
+                font-family: sans-serif;
+                margin-left: 35%;  
+        }
+        @media screen and (max-width: 600px){
+                .FIconDiv{
+                        float: left;
+        }
+                #copyDiv{
+                        float: left;
+                        position: relative;
+                        left: 80px;
+                        top: -20px;
+        }
+        } 
+        </style>
+	</head>
+	<body>
+        <div class="cantainer">
+       <!--Start of Header Eelement-->
+        <header>
+               
+                <div class="logoDiv">
+                        <a href="KetabtonIndex.html"> <img src="C:\Users\abdul\OneDrive\Desktop\MyProject\Imgs\book.PNG"></a>
+                        <a href="KetabtonIndex.html" ><span>Ketabton</span></a>
+                </div>
+                <div id="languageDiv">
+                        <a href="#">English &nbsp|</a>
+                        <a href="#">دری &nbsp|</a>             
+                        <a href="#">پشتو </a>              
+                </div>
+                <div class="navDiv">
+                        <nav>
+                                <ul>
+                                        <li class="active"><a href="KetabtonIndex.html">Home</a></li>
+                                        <li><a href="KBooks.html">Books</a></li>
+                                        <li><a href="KAudiobooks.html">Audio Books</a></li>
+                                        <li><a href="KDonation.html">Donate</a></li>
+                                        <li><a href="RegistrationForm.html">Registration</a></li>
+                                        <li><a href="KLogin.html">Login</a></li>
+                                        
+                                </ul>
+                        </nav>
+                </div>     
+        </header>
+        <!--End of header elements-->
+        <div class="BookFilterDiv">
+            <h2>FILTER BOOKS</h2>
+            <form>
+                <select>
+                    <option>Select Langauge</option>
+                    <option>Pashto</option>
+                    <option>Dari</option>
+                    <option>English</option>
+                    <option>Urdu</option>
+                    <option>Arabic</option>
+                </select>
+                <select>
+                    <option>Select Category</option>
+                    <option>Scientific Books</option>
+                    <option>Political Books</option>
+                    <option>Religious Books</option>
+                    <option>Psychology Books</option>
+                    <option>Novels and Shortstories</option>
+                    <option>Journies</option>
+                    <option>Art and Litrature</option>
+                    <option>Poetry Books</option>
+                    <option>History Books</option>
+                    <option>Medical Books</option>
+                    <option>comic Books</option>
+                    <option>Journalism Books</option>
+                    <option>Low Related Books</option>
+                    <option>Ecnomics Books</option>
+                    <option>children Books</option>
+                    <option>Engineering Books</option>
+                    <option>Magazins</option>
+                    <option>Monogrophs </option>
+                    <option>Other Books</option>
+
+                </select>
+                <select>
+                    <option>Any</option>
+                    <option>Free</option>
+                    <option>premium</option>
+                </select>
+                <input type="submit" value="Filter">
+            </form>
+        </div>
+         <!--Start of Books Categories main body -->
+        <div class="main-body">
+            <h2>BOOKS</h2>   <button id="Uploadbtn">+ Upload New Book</button>
+
+                <div class="box2">
+                    <a href="#">
+                    <div class="subox2">
+                            <img src="Imgs/ielts.PNG">
+                    </div>
+                    <div class="hpDiv">
+                        <h3>کامبريج ايلتس </h3>
+                            <h6>Free</h6>
+                    </div>
+                    </a>    
+                </div>
+        <div class="box2">
+                        <div class="subox2">
+                                 <a href=""><img src="Imgs/school.jfif">
+                        </div>
+                        <div class="hpDiv">
+                                <h3>اقتصادی رياضی</h3>
+                                <h6>Free</h6>
+                        </div>
+                        </a>
+        </div>
+        <div class="box2">
+           
+                        <div class="subox2">
+                                <a href=""><img src="Imgs/engineering.jfif">
+                        </div>
+                        <div class="hpDiv">
+                                <h3>اقتصادی رياضی</h3>
+                                <h6>Free</h6>
+                        </div>
+                        </a>
+        </div>
+        <div class="box2">
+             
+                        <div class="subox2">
+                                <a href=""><img src="Imgs/magazin.jfif">
+                        </div>
+                        <div class="hpDiv">
+                                <h3>اقتصادی رياضی</h3>
+                                <h6>Free</h6>
+                        </div>
+                        </a>
+        </div>
+        <div class="box2">
+                
+                        <div class="subox2">
+                                <a href=""><img src="Imgs/poetry.jfif">
+                        </div>
+                        <div class="hpDiv">
+                                <h3>اقتصادی رياضی</h3>
+                                <h6>Free</h6>
+                        </div>
+                        </a>
+        </div>
+        <div class="box2">
+              
+                        <div class="subox2">
+                                <a href=""><img src="Imgs/histrory.jfif">
+                        </div>
+                        <div class="hpDiv">
+                                <h3>اقتصادی رياضی</h3>
+                                <h6>Free</h6>
+                        </div>
+                        </a>
+        </div>
+        <div class="box2">
+               
+                        <div class="subox2">
+                                <a href=""><img src="Imgs/psychology.jfif">
+                        </div>
+                        <div class="hpDiv">
+                                <h3>اقتصادی رياضی</h3>
+                                <h6>Free</h6>
+                        </div>
+                        </a>
+        </div>
+        <div class="box2">
+               
+                        <div class="subox2">
+                                <a href=""><img src="Imgs/medical.jfif">
+                        </div>
+                        <div class="hpDiv">
+                                <h3>اقتصادی رياضی</h3>
+                                <h6>Free</h6>
+                        </div>
+                        </a>
+        </div>
+        <div class="box2">
+                
+                        <div class="subox2">
+                                <a href=""></a><img src="Imgs/children.jfif">
+                        </div>
+                        <div class="hpDiv">
+                                <h3>اقتصادی رياضی</h3>
+                                <h6>Free</h6>
+                        </div>
+                        </a>
+        </div>
+        <div class="box2">
+             
+                        <div class="subox2">
+                                <a href=""><img src="Imgs/art-and-litr.jfif">
+                        </div>
+                        <div class="hpDiv">
+                                <h3>اقتصادی رياضی</h3>
+                                <h6>Free</h6>
+                        </div>
+                        </a>
+        </div>
+        <div class="box2">
+                        <div class="subox2">
+                                <a href=""><img src="Imgs/engineering.jfif">
+                        </div>
+                        <div class="hpDiv">
+                                <h3>اقتصادی رياضی</h3>
+                                <h6>Free</h6>
+                        </div>
+                        </a>
+        </div>
+        <div class="box2">
+                        <div class="subox2">
+                                <a href=""><img src="Imgs/ecnomic.jfif">
+                        </div>
+                        <div class="hpDiv">
+                                <h3>اقتصادی رياضی</h3>
+                                <h6>Free</h6>
+                        </div>
+                        </a>
+        </div>
+        <div class="box2">
+                        <div class="subox2">
+                                <a href=""><img src="Imgs/shanawaz.PNG">
+                        </div>
+                        <div class="hpDiv">
+                                <h3>اقتصادی رياضی</h3>
+                                <h6>Free</h6>
+                        </div>
+                        </a>
+        </div>
+</div>
+                
+        </div>
+         <!--Start of Most Downloaded books main body div-->
+        
+         
+         <!--Start of footer element-->
+         <footer>
+                <section>
+                <div class="AboutDiv">
+                        <h5>About US</h5>
+                        <p>
+                                Ketabton is a digital library free and premium ebooks. it provides<br>
+                                a database of books, magazine and other digital documnets.<br>
+                                Ketabton gives you access to thousands of books.
+                        </p>
+                        <p>
+                                It enable you to search the datebase, view several categories, read online,<br>
+                                have the books printed or download to your device.
+                        </p>
+                </div>
+                <div class="uqlfDiv">
+                       
+                        <h5>User Account</h5> 
+                        <a href="#">Dashbord</a>
+                        <a href="#">Manger Your Books</a>
+                        <a href="#">Manage Your Post</a>
+                        <a href="#">Login</a>
+                        <a href="#">Register</a>
+                </div>
+                <div class="uqlfDiv">
+                        <h5>Quick Link</h5>
+                        <a href="#">Home</a>
+                        <a href="#">Books</a>
+                        <a href="#">Post</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Contact Us</a>
+                </div>
+                <div class="uqlfDiv">
+                        <h5>Follow Us</h5>
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Youtub</a>
+                        <a href="#">Instagram</a>
+                </div>
+               </section>
+               <div class="FIconDiv">
+                <div class="subiconDiv">
+                        <a href="www.facebook.com" class="fwtiDiv"><i class="fa fa-facebook"></i> </a> 
+                        <a href="www.twitter.com" class="fwtiDiv"> <i class="fa fa-twitter"></i></a>
+                        <a href="www.instagram.com" class="fwtiDiv"> <i class="fa fa-instagram"></i> </a>
+                        <a href="www.youtube.com" class="fwtiDiv"> <i class="fa fa-youtube"></i></a>
+                 </div>
+                </div>
+                <span id="copyDiv">Copy 2021 ketabton.com</span>
+              
+        </footer>
+
+         <!-- End of footer elements -->
+        </div>
+	</body>
+</html>
